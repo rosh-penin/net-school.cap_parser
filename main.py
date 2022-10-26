@@ -1,5 +1,3 @@
-# from requests_html import HTMLSession
-# from bs4 import BeautifulSoup
 import time
 
 from selenium import webdriver
@@ -112,36 +110,3 @@ if __name__ == '__main__':
     driver = webdriver.Chrome(service=ChromeService(executable_path=ChromeDriverManager().install()))
     main(driver)
     driver.quit()
-
-
-
-
-
-
-
-# usag = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:101.0) Gecko/20100101 Firefox/101.0"
-# qtext = "александровское ставропольский край население"
-# headers = {"userAgent":usag}
-# url1 = "https://net-school.cap.ru/"
-
-# session = HTMLSession()
-# r = session.get(url1)
-# script = """
-# function() {
-#   return sendAjaxRequest($(this));
-# }
-# """
-# r.html.render(script=script)
-
-# for i in r.html.find('.select-main select'):
-#     name = i.attrs.get('id')
-#     if name == 'provinces':
-#         provinces = i
-#         break
-#     elif name == 'schools':
-#         schools = i
-
-# print(provinces.text)
-# print(provinces.full_text)
-
-# r.close()
