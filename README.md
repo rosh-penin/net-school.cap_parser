@@ -10,7 +10,7 @@ Site is built using JavaScript and closed API.
 
 ## Installation
 
-After downloading source and creating Python Virtual Environment:
+After downloading source and creating Python Virtual Environment(don't forget to activate it):
 ```sh
 pip install -r requirements.txt
 ```
